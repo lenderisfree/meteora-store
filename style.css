@@ -113,10 +113,20 @@ main {
   max-width: 340px;
   display: flex;
   border: 1px solid #cccccc94;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
 }
+
+.products img {
+  object-fit: cover;
+}
+
 .product {
   width: 340px;
   height: 400px;
+}
+
+.detail {
+  max-width: 339px;
 }
 
 .product-information {
@@ -222,4 +232,14 @@ main {
   padding: 8px;
   border-radius: 0px;
   border: 1px solid var(--main-color);
+}
+
+/*-----------FOOTER------------*/
+
+footer {
+  background-color: var(--main-color);
+  color: var(--neutral-color);
+  padding: 15px;
+  text-align: center;
+  font-size: 0.8rem;
 }
