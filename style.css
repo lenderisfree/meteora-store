@@ -67,8 +67,12 @@ header {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 40px;
-  gap: 30px;
+  gap: 40px;
+  max-width: 1060px;
+  margin: auto;
+  padding-top: 70px;
 }
 
 .grid {
@@ -81,6 +85,7 @@ main {
 .cards {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card img {
@@ -94,4 +99,127 @@ main {
   color: var(--neutral-color);
   text-align: center;
   padding: 8px 16px;
+}
+
+/*----------PRODUCT-------------*/
+
+.title-cards {
+  font-size: 1.8rem;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  display: flex;
+  border: 1px solid #cccccc94;
+}
+.product {
+  width: 340px;
+  height: 400px;
+}
+
+.product-information {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 15px;
+}
+
+.product-title {
+  font-size: 1rem;
+}
+
+.product-description {
+  font-size: 0.8rem;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.button-more {
+  width: 100px;
+  padding: 9px 16px;
+  background-color: var(--tertiary-color);
+  color: var(--neutral-color);
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*------FACILITIES----------*/
+
+.facilities {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.card-facilities {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.facilities h1 {
+  color: var(--neutral-color);
+  text-transform: uppercase;
+}
+.facilities .text-facilities {
+  color: var(--neutral-color);
+}
+
+.title-facilities {
+  font-size: 0.8rem;
+}
+
+.facilities .title-facilities {
+  color: var(--secondary-color);
+}
+
+.box-facilities {
+  display: flex;
+  gap: 15px;
+}
+
+.facilities-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.7rem;
+  gap: 20px;
+  max-width: 150px;
+}
+
+/*----------BUTTON BOX-------------*/
+
+.sale-box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid var(--main-color);
+  padding: 20px 40px;
+  width: 600px;
+  text-align: center;
+  gap: 15px;
+  margin: 50px auto;
+}
+
+.send-email {
+  display: flex;
+}
+.send-email input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 0px;
+  border: 1px solid var(--main-color);
 }
