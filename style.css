@@ -76,6 +76,10 @@ header {
   cursor: pointer;
 }
 
+.img-banner {
+  width: 100%;
+}
+
 /*-------------GRID---------------*/
 main {
   display: flex;
@@ -97,6 +101,7 @@ main {
 
 .cards {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -264,4 +269,28 @@ footer {
 
 .btn-more::active {
   transform: translateY(-1px);
+}
+
+@media (max-width: 1060px) {
+  main {
+    max-width: 800px;
+  }
+  .logo-links {
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .cards-tablet {
+    align-content: center;
+    gap: 39px;
+  }
+
+  .card-facilities {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sale-box {
+    padding: 50px;
+  }
 }
