@@ -263,7 +263,7 @@ main {
 
 /*----------SALE BOX-------------*/
 
-.sale-box {
+#sale-box {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -325,7 +325,7 @@ footer {
     gap: 30px;
   }
 
-  .sale-box {
+  #sale-box {
     padding: 50px;
   }
 }
@@ -353,5 +353,22 @@ footer {
 
   #mobile-logo {
     display: block;
+  }
+
+  #sale-box {
+    width: 340px;
+    padding: 25px 15px;
+  }
+
+  #sale-box p {
+    font-size: 0.9rem;
+  }
+
+  .send-email {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
   }
 }
