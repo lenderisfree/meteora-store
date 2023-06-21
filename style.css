@@ -38,13 +38,17 @@ header {
   background-color: var(--main-color);
 }
 
+#mobile-logo {
+  display: none;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
   padding: 13px 23px;
 }
 
-.logo-links {
+#logo-links {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -52,7 +56,7 @@ header {
   font-size: 0.9rem;
 }
 
-.logo-links a {
+#logo-links a {
   color: var(--neutral-color);
 }
 
@@ -78,6 +82,37 @@ header {
 
 .img-banner {
   width: 100%;
+}
+
+/*---------MOBILE NAVBAR------------*/
+#mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgb(56, 56, 56);
+  text-align: start;
+  padding: 20px;
+  gap: 20px;
+  width: 170px;
+}
+
+.bi {
+  text-align: end;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+#mobile-navbar a {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 5px;
+  font-size: 0.7rem;
+}
+
+#mobile-navbar #link-home {
+  color: var(--secondary-color);
 }
 
 /*-------------GRID---------------*/
@@ -275,7 +310,7 @@ footer {
   main {
     max-width: 800px;
   }
-  .logo-links {
+  #logo-links {
     font-size: 1rem;
     gap: 10px;
   }
@@ -292,5 +327,31 @@ footer {
 
   .sale-box {
     padding: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  #logo-links {
+    display: none;
+  }
+
+  .btns-nav {
+    background-color: var(--neutral-color);
+    padding: 30px;
+  }
+
+  #input-product {
+    border: 1px solid black;
+    width: 230px;
+  }
+
+  .btn-nav {
+    background-color: var(--neutral-color);
+    border: 1px solid black;
+    color: var(--main-color);
+  }
+
+  #mobile-logo {
+    display: block;
   }
 }
