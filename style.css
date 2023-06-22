@@ -93,7 +93,7 @@ header {
   top: 0;
   background-color: rgb(56, 56, 56);
   text-align: start;
-  padding: 20px 20px 40px 20pxte;
+  padding: 20px 20px 40px 20px;
   gap: 30px;
   width: 220px;
 }
@@ -108,7 +108,7 @@ header {
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
   padding-bottom: 5px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 #mobile-navbar #link-home {
@@ -165,7 +165,6 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 340px;
-  display: flex;
   border: 1px solid #cccccc94;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
 }
@@ -317,7 +316,6 @@ footer {
   }
   .cards-tablet {
     align-content: center;
-    gap: 39px;
   }
 
   .card-facilities {
@@ -371,6 +369,10 @@ footer {
   #sale-box {
     width: 340px;
     padding: 25px 15px;
+  }
+
+  .cards-tablet {
+    padding: 20px;
   }
 
   #sale-box p {
