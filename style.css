@@ -13,7 +13,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: var(--main-font);
 }
 
@@ -46,25 +46,22 @@ header {
 #header {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
   padding: 13px 23px;
 }
 
 #logo-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   font-weight: 400;
   font-size: 0.9rem;
-  width: 100%;
-}
-
-.picture-container {
-  width: 100%;
 }
 
 #logo-links a {
   color: var(--neutral-color);
+  display: block;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .btns-nav {
@@ -104,6 +101,7 @@ header {
   padding: 20px 20px 40px 20px;
   gap: 30px;
   width: 220px;
+  z-index: 2;
 }
 
 .bi {
@@ -149,7 +147,7 @@ main {
   flex-wrap: wrap;
 }
 
-.card img {
+.cardgrid img {
   width: 100%;
   min-width: 160px;
   height: 157px;
@@ -335,6 +333,10 @@ footer {
     gap: 30px;
   }
 
+  .btns-nav {
+    justify-content: center;
+  }
+
   #sale-box {
     padding: 50px;
   }
@@ -368,15 +370,15 @@ footer {
     display: flex;
   }
 
-  .card {
+  .cardgrid {
     width: 160px;
   }
 
-  .card img {
+  .cardgrid img {
     object-fit: cover;
   }
 
-  .card .img-sunglasses {
+  .cardgrid .img-sunglasses {
     object-position: calc(30%);
   }
 
