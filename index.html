@@ -29,6 +29,7 @@
           <a href="#">Novidades</a>
           <a href="#">Promoções</a>
         </nav>
+        <i class="bi bi-list" id="menu"></i>
         <nav id="mobile-navbar">
           <i class="bi bi-x-lg" id="close-menu"></i>
           <a href="#" id="link-home">Home</a>
@@ -67,25 +68,55 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="assets/banner-desktop.png"
-              class="d-block w-100"
-              alt="banner 1"
-            />
+            <picture>
+              <source
+                srcset="assets/banner-tablet.png"
+                media="(max-width: 760px)"
+              />
+              <source
+                srcset="assets/banner-mobile.png"
+                media="(max-width: 450px)"
+              />
+              <img
+                src="assets/banner-desktop.png"
+                class="d-block w-100"
+                alt="banner 1"
+              />
+            </picture>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/banner2-desktop.png"
-              class="d-block w-100"
-              alt="banner 2"
-            />
+            <picture>
+              <source
+                srcset="assets/banner2-tablet.png"
+                media="(max-width: 760px)"
+              />
+              <source
+                srcset="assets/banner2-mobile.png"
+                media="(max-width: 450px)"
+              />
+              <img
+                src="assets/banner2-desktop.png"
+                class="d-block w-100"
+                alt="banner 2"
+              />
+            </picture>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/banner3-desktop.png"
-              class="d-block w-100"
-              alt="banner 3"
-            />
+            <picture>
+              <source
+                srcset="assets/banner3-tablet.png"
+                media="(max-width: 760px)"
+              />
+              <source
+                srcset="assets/banner3-mobile.png"
+                media="(max-width: 450px)"
+              />
+              <img
+                src="assets/banner3-desktop.png"
+                class="d-block w-100"
+                alt="banner 3"
+              />
+            </picture>
           </div>
         </div>
         <button
@@ -320,5 +351,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

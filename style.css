@@ -104,6 +104,17 @@ header {
   z-index: 2;
 }
 
+#menu,
+#close-menu {
+  display: none;
+}
+
+#close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .bi {
   text-align: end;
   color: var(--secondary-color);
@@ -119,6 +130,10 @@ header {
 
 #mobile-navbar #link-home {
   color: var(--secondary-color);
+}
+
+#mobile-navbar.menu-active {
+  right: 0;
 }
 
 /*-------------GRID---------------*/
@@ -350,6 +365,11 @@ footer {
     display: none;
   }
 
+  #menu,
+  #close-menu {
+    display: block;
+  }
+
   .btns-nav {
     background-color: var(--neutral-color);
     padding: 30px;
@@ -364,10 +384,6 @@ footer {
     background-color: var(--neutral-color);
     border: 1px solid black;
     color: var(--main-color);
-  }
-
-  #mobile-navbar {
-    display: flex;
   }
 
   .cardgrid {
