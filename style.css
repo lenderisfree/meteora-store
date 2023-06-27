@@ -34,8 +34,9 @@ select:focus {
 
 header {
   display: flex;
-  flex-direction: column;
   background-color: var(--main-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #mobile-logo {
@@ -44,6 +45,7 @@ header {
 
 #header {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
   padding: 13px 23px;
 }
@@ -54,6 +56,11 @@ header {
   gap: 2rem;
   font-weight: 400;
   font-size: 0.9rem;
+  width: 100%;
+}
+
+.picture-container {
+  width: 100%;
 }
 
 #logo-links a {
@@ -64,6 +71,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  padding: 13px 23px;
 }
 
 #input-product {
@@ -86,7 +94,7 @@ header {
 
 /*---------MOBILE NAVBAR------------*/
 #mobile-navbar {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -306,10 +314,13 @@ footer {
   transform: translateY(-1px);
 }
 
+/*-----------MEDIA QUERY------------*/
+
 @media (max-width: 1060px) {
   main {
     max-width: 800px;
   }
+
   #logo-links {
     font-size: 1rem;
     gap: 10px;
@@ -329,7 +340,10 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 865px) {
+  header {
+    flex-direction: column;
+  }
   #logo-links {
     display: none;
   }
@@ -350,8 +364,8 @@ footer {
     color: var(--main-color);
   }
 
-  #mobile-logo {
-    display: block;
+  #mobile-navbar {
+    display: flex;
   }
 
   .card {
