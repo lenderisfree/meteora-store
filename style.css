@@ -92,21 +92,6 @@ header {
 }
 
 /*---------MOBILE NAVBAR------------*/
-#mobile-navbar {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: rgb(56, 56, 56);
-  text-align: start;
-  padding: 50px 20px 40px 20px;
-  gap: 30px;
-  width: 220px;
-  z-index: 2;
-  transition: 0.4s;
-}
-
 #menu,
 #close-menu {
   display: none;
@@ -116,6 +101,24 @@ header {
   position: absolute;
   top: 10;
   right: 20;
+}
+
+#mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  z-index: 2;
+  transition: 0.5s;
+  gap: 30px;
+}
+
+#mobile-navbar.menu-active {
+  left: 0;
 }
 
 .bi {
@@ -133,10 +136,6 @@ header {
 
 #mobile-navbar #link-home {
   color: var(--secondary-color);
-}
-
-#mobile-navbar.menu-active {
-  right: -1000px;
 }
 
 /*-------------GRID---------------*/
@@ -361,6 +360,10 @@ footer {
 }
 
 @media (max-width: 865px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     flex-direction: column;
   }
