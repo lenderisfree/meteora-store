@@ -140,6 +140,37 @@ header {
   color: var(--secondary-color);
 }
 
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-title {
+  position: absolute;
+}
+
+.carousel-title-right {
+  top: 40%;
+  right: 20%;
+}
+
+.carousel-title-left {
+  top: 40%;
+  left: 20%;
+}
+
+.carousel-title h2,
+p {
+  color: var(--neutral-color);
+}
+
+.carousel-title p {
+  text-align: end;
+}
+
+.carousel-title-left p {
+  text-align: start;
+}
+
 /*-------------GRID---------------*/
 main {
   display: flex;
@@ -356,6 +387,10 @@ footer {
     justify-content: center;
   }
 
+  .carousel-title-right {
+    right: 10%;
+  }
+
   #sale-box {
     padding: 50px;
   }
@@ -406,9 +441,26 @@ footer {
     object-position: calc(30%);
   }
 
+  .carousel-title h2 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-title p {
+    font-size: 1rem;
+  }
+
   #sale-box {
     width: 340px;
     padding: 25px 15px;
+  }
+
+  .box-facilities img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .facilities-description {
+    gap: 3px;
   }
 
   .cards-tablet {
