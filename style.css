@@ -33,11 +33,11 @@ select:focus {
 /*-----------HEADER-------------*/
 
 header {
-  display: flex;
   background-color: var(--main-color);
-  flex-wrap: wrap;
-  justify-content: space-between;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 #mobile-logo {
@@ -46,9 +46,8 @@ header {
 
 #header {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
-  padding: 13px 23px;
+  padding: 25px;
 }
 
 #logo-links {
@@ -68,9 +67,11 @@ header {
 
 .btns-nav {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 20px;
   padding: 13px 23px;
+  position: absolute;
+  right: 0;
 }
 
 #input-product {
@@ -159,7 +160,7 @@ header {
 }
 
 .carousel-title h2,
-p {
+.carousel-title p {
   color: var(--neutral-color);
 }
 
@@ -383,10 +384,6 @@ footer {
     gap: 30px;
   }
 
-  .btns-nav {
-    justify-content: center;
-  }
-
   .carousel-title-right {
     right: 10%;
   }
@@ -396,7 +393,7 @@ footer {
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
@@ -404,6 +401,11 @@ footer {
   header {
     flex-direction: column;
   }
+
+  #header {
+    justify-content: space-between;
+  }
+
   #logo-links {
     display: none;
   }
@@ -414,19 +416,23 @@ footer {
   }
 
   .btns-nav {
-    background-color: var(--neutral-color);
+    justify-content: center;
     padding: 30px;
-  }
-
-  #input-product {
+    background-color: var(--neutral-color);
     border: 1px solid black;
-    width: 230px;
+    color: var(--main-color);
+    position: unset;
   }
 
   .btn-nav {
     background-color: var(--neutral-color);
     border: 1px solid black;
     color: var(--main-color);
+  }
+
+  #input-product {
+    border: 1px solid black;
+    width: 230px;
   }
 
   .cardgrid {
