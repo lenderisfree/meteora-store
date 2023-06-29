@@ -485,3 +485,16 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 450px) {
+  .carousel-title {
+    top: 270px;
+    left: 82px;
+    max-width: 230px;
+  }
+
+  .carousel-title h2,
+  .carousel-title p {
+    text-align: center;
+  }
+}
