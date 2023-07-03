@@ -55,7 +55,7 @@ header {
   align-items: center;
   gap: 3rem;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 #logo-links a {
@@ -349,6 +349,50 @@ main {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
 }
 
+/*-----------MODAL DESKTOP---------------*/
+dialog {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
+  border: none;
+  margin: auto;
+  width: 700px;
+}
+
+dialog::backdrop {
+  background: rgba(56, 56, 56, 0.8);
+}
+
+.modal-header {
+  background-color: var(--main-color);
+  color: var(--neutral-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal-header img {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-header p {
+  margin-bottom: 0px;
+}
+
+.icon-text-modal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.modal-header .bi {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-message {
+  padding: 20px 10px;
+}
+
 /*-----------FOOTER------------*/
 
 footer {
@@ -496,5 +540,13 @@ footer {
   .carousel-title h2,
   .carousel-title p {
     text-align: center;
+  }
+
+  dialog {
+    width: 350px;
+  }
+
+  .icon-text-modal p {
+    font-size: 0.9rem;
   }
 }

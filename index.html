@@ -361,10 +361,32 @@
         primeira compra? <b>Cadastre-se!</b>
       </p>
       <div class="send-email">
-        <input type="email" placeholder="Digite seu email" />
-        <button class="btn-more">Enviar</button>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Digite seu email"
+        />
+        <button class="btn-more btn-sendMail" onclick="cleanField() ">
+          Enviar
+        </button>
       </div>
     </div>
+    <dialog>
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="icon-text-modal">
+            <img src="assets/check-circle.png" alt="#" />
+            <p>E-mail cadastrado com sucesso!</p>
+          </div>
+          <i class="bi bi-x closeModal"></i>
+        </div>
+      </div>
+      <p class="modal-message">
+        Em breve você receberá novidades exclusivas da Meteora
+      </p>
+    </dialog>
+
     <footer>
       <p>
         2023 © Desenvolvido por Alex Almeida | Projeto fictício sem fins
