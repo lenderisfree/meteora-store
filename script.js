@@ -9,7 +9,7 @@ const menu = document.querySelector("#mobile-navbar");
 });
 
 // Open modal
-const modal = document.querySelector("dialog");
+const modal = document.querySelector("#modalMail");
 const openModalBtn = document.querySelector(".btn-sendMail");
 const closeModalBtn = document.querySelector(".closeModal");
 
@@ -24,16 +24,17 @@ function cleanField() {
 
 // Modal cards
 
-const btnMore = document.querySelectorAll(".btn-more");
-const modalOverlay = document.querySelector(".modal-overlay");
 const modalImage = document.querySelector(".modal-image");
 const modalTitle = document.querySelector(".modal-title");
 const modalDescription = document.querySelector(".modal-description");
 const modalPrice = document.querySelector(".modal-price");
-const modalClose = document.querySelector(".modal-close");
+const btnMore = document.querySelectorAll(".btn-seeCardInfo");
+const modalOverlay = document.querySelector("#modalCards");
+const modalClose = document.querySelector(".closeModalCard");
 
 btnMore.forEach((button) => {
   button.addEventListener("click", () => {
+    openModal();
     const product = button.closest(".products");
     const productImage = product.querySelector(".product");
     const productTitle = product.querySelector(".product-title").textContent;
@@ -48,3 +49,15 @@ btnMore.forEach((button) => {
     modalPrice.textContent = productPrice;
   });
 });
+
+modalClose.addEventListener("click", () => {
+  closeModal();
+});
+
+function openModal() {
+  modalOverlay.showModal();
+}
+
+function closeModal() {
+  modalOverlay.close();
+}
