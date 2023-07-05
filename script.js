@@ -61,3 +61,39 @@ function openModal() {
 function closeModal() {
   modalOverlay.close();
 }
+const apiUrl = "https://foxcoding.net/api/getProductsList";
+
+// Função para atualizar os dados do produto
+function updateProductData() {
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const products = data?.data?.products || [];
+      const productElements = document.querySelectorAll(".products");
+
+      productElements.forEach((productElement, index) => {
+        const product = products[index];
+        if (product) {
+          const productImageElement = productElement.querySelector(".product");
+          const productTitleElement =
+            productElement.querySelector(".product-title");
+          const productDescriptionElement = productElement.querySelector(
+            ".product-description"
+          );
+          const productPriceElement =
+            productElement.querySelector(".product-price");
+
+          productImageElement.src = product.image || "";
+          productTitleElement.textContent = product.name || "";
+          productDescriptionElement.textContent = product.description || "";
+          productPriceElement.textContent = `R$ ${product.price || ""}`;
+        }
+      });
+    })
+    .catch((error) => {
+      console.log("Falha ao fazer a solicitação à API:", error);
+    });
+}
+
+// Chamar a função para atualizar os dados do produto
+updateProductData();

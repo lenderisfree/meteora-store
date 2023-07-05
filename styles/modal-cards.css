@@ -95,7 +95,7 @@
 #add-cart {
   position: absolute;
   bottom: 20px;
-  left: 54.3%;
+  left: 43%;
   border: none;
   background-color: var(--tertiary-color);
   color: var(--neutral-color);
@@ -106,4 +106,10 @@
 #add-cart:active {
   transform: translateY(1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
+
+.modal-image {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
 }

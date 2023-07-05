@@ -6,6 +6,7 @@
 .products {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 340px;
   border: 1px solid #cccccc94;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
@@ -13,11 +14,7 @@
 
 .products img {
   object-fit: cover;
-}
-
-.product {
-  width: 340px;
-  height: 400px;
+  width: 100%;
 }
 
 .detail {
