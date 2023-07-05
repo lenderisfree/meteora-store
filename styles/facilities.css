@@ -1,0 +1,45 @@
+.facilities {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.card-facilities {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.facilities h1 {
+  color: var(--neutral-color);
+  text-transform: uppercase;
+}
+.facilities .text-facilities {
+  color: var(--neutral-color);
+}
+
+.title-facilities {
+  font-size: 0.8rem;
+}
+
+.facilities .title-facilities {
+  color: var(--secondary-color);
+}
+
+.box-facilities {
+  display: flex;
+  gap: 15px;
+}
+
+.facilities-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.7rem;
+  gap: 20px;
+  max-width: 150px;
+}

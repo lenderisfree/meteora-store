@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+  max-width: 1060px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardgrid img {
+  width: 100%;
+  min-width: 160px;
+  height: 157px;
+}
+
+.card-title {
+  background-color: var(--main-color);
+  color: var(--neutral-color);
+  text-align: center;
+  padding: 8px 16px;
+}

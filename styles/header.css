@@ -1,0 +1,59 @@
+header {
+  background-color: var(--main-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#mobile-logo {
+  display: none;
+}
+
+#header {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+}
+
+#logo-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#logo-links a {
+  color: var(--neutral-color);
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.btns-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 13px 23px;
+  position: absolute;
+  right: 0;
+}
+
+#input-product {
+  width: 175px;
+  padding: 10px 15px;
+}
+
+.btn-nav {
+  padding: 10px;
+  border: 1px solid var(--neutral-color);
+  background-color: transparent;
+  color: var(--neutral-color);
+  width: 80px;
+  cursor: pointer;
+}
+
+.img-banner {
+  width: 100%;
+}

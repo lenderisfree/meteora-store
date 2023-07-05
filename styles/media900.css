@@ -1,0 +1,92 @@
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  #header {
+    justify-content: space-between;
+  }
+
+  #logo-links {
+    display: none;
+  }
+
+  #menu,
+  #close-menu {
+    display: block;
+  }
+
+  .btns-nav {
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--neutral-color);
+    border: 1px solid black;
+    color: var(--main-color);
+    position: unset;
+  }
+
+  .btn-nav {
+    background-color: var(--neutral-color);
+    border: 1px solid black;
+    color: var(--main-color);
+  }
+
+  #input-product {
+    border: 1px solid black;
+    width: 230px;
+  }
+
+  .cardgrid {
+    width: 160px;
+  }
+
+  .cardgrid img {
+    object-fit: cover;
+  }
+
+  .cardgrid .img-sunglasses {
+    object-position: calc(30%);
+  }
+
+  .carousel-title h2 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-title p {
+    font-size: 1rem;
+  }
+
+  #sale-box {
+    width: 340px;
+    padding: 25px 15px;
+  }
+
+  .box-facilities img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .facilities-description {
+    gap: 3px;
+  }
+
+  .cards-tablet {
+    padding: 20px;
+  }
+
+  #sale-box p {
+    font-size: 0.9rem;
+  }
+
+  .send-email {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}

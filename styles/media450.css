@@ -1,0 +1,30 @@
+@media (max-width: 450px) {
+  .carousel-title {
+    top: 270px;
+    left: 82px;
+    max-width: 230px;
+  }
+
+  .carousel-title h2,
+  .carousel-title p {
+    text-align: center;
+  }
+
+  dialog {
+    width: 350px;
+  }
+
+  .icon-text-modal p {
+    font-size: 0.9rem;
+  }
+
+  /*-------MODAL CARDS------*/
+  .modal-cards {
+    flex-direction: column;
+  }
+
+  #add-cart {
+    position: inherit;
+    width: 180px;
+  }
+}

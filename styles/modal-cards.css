@@ -1,0 +1,109 @@
+#modalCards {
+  border: none;
+  margin: auto;
+}
+
+.modal-overlay {
+  max-width: 700px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
+}
+
+.modal-overlay::backdrop {
+  background: rgba(56, 56, 56, 0.8);
+}
+
+.modal-cards {
+  display: flex;
+  gap: 15px;
+  padding: 15px 15px 80px 15px;
+}
+
+.modal-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.modal-border {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border: 1px solid var(--primary-color);
+  background-color: gray;
+}
+
+.modal-border-light {
+  height: 0.5px;
+  background-color: var(--primary-color);
+}
+
+.modal-description,
+.p-modal,
+.checkbox {
+  font-size: 0.8rem;
+}
+
+.modal-price,
+.p-modal {
+  font-weight: bold;
+}
+
+.store-delivery {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-options {
+  display: flex;
+  gap: 25px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.7rem;
+}
+
+.checkbox-round {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 1px solid gray;
+}
+
+.checkbox-round:checked {
+  background-color: rgb(4, 110, 203);
+  border: 2px solid var(--tertiary-color);
+}
+
+#add-cart {
+  position: absolute;
+  bottom: 20px;
+  left: 54.3%;
+  border: none;
+  background-color: var(--tertiary-color);
+  color: var(--neutral-color);
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+#add-cart:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
