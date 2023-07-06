@@ -8,20 +8,6 @@ const menu = document.querySelector("#mobile-navbar");
   });
 });
 
-// Open modal
-const modal = document.querySelector("#modalMail");
-const openModalBtn = document.querySelector(".btn-sendMail");
-const closeModalBtn = document.querySelector(".closeModal");
-
-openModalBtn.addEventListener("click", () => modal.showModal());
-closeModalBtn.addEventListener("click", () => modal.close());
-
-//clean email information
-
-function cleanField() {
-  document.querySelector("#email").value = "";
-}
-
 // Modal cards
 
 const modalImage = document.querySelector(".modal-image");
@@ -64,25 +50,26 @@ function closeModal() {
 
 // Função para atualizar os dados do produto
 
-const apiUrl = "https://fakestoreapi.com/products";
-function atualizarProdutos() {
-  fetch("https://fakestoreapi.com/products")
+const api = "https://fakestoreapi.com/products";
+
+function updateProducts() {
+  fetch(api)
     .then((response) => response.json())
     .then((data) => {
-      const produtos = data;
+      const products = data;
 
-      const elementosProduto = document.querySelectorAll(".product");
+      const productElements = document.querySelectorAll(".product");
 
-      elementosProduto.forEach((elemento, index) => {
-        elemento.src = produtos[index].image;
+      productElements.forEach((element, index) => {
+        element.src = products[index].image;
 
-        const elementoPai = elemento.parentNode;
+        const mainElement = element.parentNode;
 
-        const tituloElemento = elementoPai.querySelector(".product-title");
-        tituloElemento.textContent = produtos[index].title;
+        const elementTitle = mainElement.querySelector(".product-title");
+        elementTitle.textContent = products[index].title;
 
-        const precoElemento = elementoPai.querySelector(".product-price");
-        precoElemento.textContent = "Preço: $" + produtos[index].price;
+        const elementPrice = mainElement.querySelector(".product-price");
+        elementPrice.textContent = "Preço: R$ " + products[index].price;
       });
     })
     .catch((error) => {
@@ -90,4 +77,6 @@ function atualizarProdutos() {
     });
 }
 
-atualizarProdutos();
+updateProducts();
+
+console.log(api);

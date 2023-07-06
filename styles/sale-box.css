@@ -16,7 +16,6 @@
   display: flex;
 }
 .send-email input {
-  width: 300px;
   padding: 8px;
   border-radius: 0px;
   border: 1px solid var(--main-color);
@@ -27,50 +26,9 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
 }
 
-/*-----------MODAL DESKTOP---------------*/
-#modalMail {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
-  border: none;
+#error-email {
+  color: crimson;
   margin: auto;
-  width: 700px;
-}
-
-dialog::backdrop {
-  background: rgba(56, 56, 56, 0.8);
-}
-
-.modal-header {
-  background-color: var(--main-color);
-  color: var(--neutral-color);
-  display: flex;
-  align-items: center;
   padding: 10px;
-}
-
-.modal-header i {
-  cursor: pointer;
-}
-
-.modal-header img {
-  width: 20px;
-  height: 20px;
-}
-
-.modal-header p {
-  margin-bottom: 0px;
-}
-
-.icon-text-modal {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.modal-header .bi {
-  width: 30px;
-  height: 30px;
-}
-
-.modal-message {
-  padding: 20px 10px;
+  font-size: 0.9rem;
 }

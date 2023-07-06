@@ -497,14 +497,17 @@
       </p>
       <div class="send-email">
         <input
+          validateEmail()
           type="email"
           id="email"
-          required
           placeholder="Digite seu email"
+          required
         />
-        <button class="btn-more btn-sendMail" onclick="cleanField() ">
-          Enviar
-        </button>
+      
+        <input type="submit" class="btn-more btn-sendMail" onclick="validateEmail()">
+         
+        </input>  
+        <span id="error-email"></span>
       </div>
     </div>
     <dialog id="modalMail">
@@ -534,5 +537,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="mail-validation.js"></script>
   </body>
 </html>
