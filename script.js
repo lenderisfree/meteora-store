@@ -8,6 +8,20 @@ const menu = document.querySelector("#mobile-navbar");
   });
 });
 
+// Open modal
+const modal = document.querySelector("#modalMail");
+const openModalBtn = document.querySelector(".btn-sendMail");
+const closeModalBtn = document.querySelector(".closeModal");
+
+openModalBtn.addEventListener("click", () => modal.showModal());
+closeModalBtn.addEventListener("click", () => modal.close());
+
+//clean email information
+
+function cleanField() {
+  document.querySelector("#email").value = "";
+}
+
 // Modal cards
 
 const modalImage = document.querySelector(".modal-image");
@@ -47,36 +61,3 @@ function openModal() {
 function closeModal() {
   modalOverlay.close();
 }
-
-// Função para atualizar os dados do produto
-
-const api = "https://fakestoreapi.com/products";
-
-function updateProducts() {
-  fetch(api)
-    .then((response) => response.json())
-    .then((data) => {
-      const products = data;
-
-      const productElements = document.querySelectorAll(".product");
-
-      productElements.forEach((element, index) => {
-        element.src = products[index].image;
-
-        const mainElement = element.parentNode;
-
-        const elementTitle = mainElement.querySelector(".product-title");
-        elementTitle.textContent = products[index].title;
-
-        const elementPrice = mainElement.querySelector(".product-price");
-        elementPrice.textContent = "Preço: R$ " + products[index].price;
-      });
-    })
-    .catch((error) => {
-      console.error("Ocorreu um erro:", error);
-    });
-}
-
-updateProducts();
-
-console.log(api);
