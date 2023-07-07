@@ -14,11 +14,11 @@ function cleanField() {
   } else {
     errorContainer.innerHTML = "";
     emailInput.value = "";
-    openModal();
+    openModalMail();
   }
 }
 
-function openModal() {
+function openModalMail() {
   var modal = document.getElementById("modalMail");
   modal.showModal();
 }

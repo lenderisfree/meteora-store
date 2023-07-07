@@ -1,3 +1,5 @@
+//mobile navbar
+
 const menuBtn = document.querySelector("#menu");
 const closeMenuBtn = document.querySelector("#close-menu");
 const menu = document.querySelector("#mobile-navbar");
@@ -20,7 +22,7 @@ const modalClose = document.querySelector(".closeModalCard");
 
 btnMore.forEach((button) => {
   button.addEventListener("click", () => {
-    openModal();
+    openModalProducts();
     const product = button.closest(".products");
     const productImage = product.querySelector(".product");
     const productTitle = product.querySelector(".product-title").textContent;
@@ -40,7 +42,7 @@ modalClose.addEventListener("click", () => {
   closeModal();
 });
 
-function openModal() {
+function openModalProducts() {
   modalOverlay.showModal();
 }
 
