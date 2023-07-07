@@ -18,6 +18,10 @@
     font-size: 0.9rem;
   }
 
+  .modal-information {
+    gap: 15px;
+  }
+
   /*-------MODAL CARDS------*/
   .modal-cards {
     flex-direction: column;
@@ -26,5 +30,6 @@
   #add-cart {
     position: inherit;
     width: 180px;
+    margin-top: 20px;
   }
 }
