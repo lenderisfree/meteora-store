@@ -95,7 +95,6 @@
 #add-cart {
   position: absolute;
   bottom: 20px;
-  left: 43%;
   border: none;
   background-color: var(--tertiary-color);
   color: var(--neutral-color);

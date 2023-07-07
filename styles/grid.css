@@ -34,4 +34,5 @@ main {
   color: var(--neutral-color);
   text-align: center;
   padding: 8px 16px;
+  display: block;
 }
