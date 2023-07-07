@@ -14,6 +14,7 @@
 
 .send-email {
   display: flex;
+  position: relative;
 }
 .send-email input {
   padding: 8px;
@@ -26,9 +27,12 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
 }
 
-#error-email {
+#errorContainer {
   color: crimson;
   margin: auto;
-  padding: 10px;
-  font-size: 0.9rem;
+  padding: 10px 0px;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 33px;
+  left: 0;
 }

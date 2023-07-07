@@ -1,3 +1,5 @@
+@import url(style.css);
+
 header {
   background-color: var(--main-color);
   position: relative;
@@ -29,6 +31,12 @@ header {
   display: block;
   width: 100%;
   white-space: nowrap;
+}
+
+#logo-links a:hover {
+  color: var(--tertiary-color);
+  transition: 1s;
+  transform: rotate3d(1, 2, 3, 10deg);
 }
 
 .btns-nav {

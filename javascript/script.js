@@ -8,20 +8,6 @@ const menu = document.querySelector("#mobile-navbar");
   });
 });
 
-// Open modal
-const modal = document.querySelector("#modalMail");
-const openModalBtn = document.querySelector(".btn-sendMail");
-const closeModalBtn = document.querySelector(".closeModal");
-
-openModalBtn.addEventListener("click", () => modal.showModal());
-closeModalBtn.addEventListener("click", () => modal.close());
-
-//clean email information
-
-function cleanField() {
-  document.querySelector("#email").value = "";
-}
-
 // Modal cards
 
 const modalImage = document.querySelector(".modal-image");
