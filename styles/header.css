@@ -53,7 +53,7 @@ header {
   padding: 10px 15px;
 }
 
-.btn-nav {
+.btn-nav-filter {
   padding: 10px;
   border: 1px solid var(--neutral-color);
   background-color: transparent;

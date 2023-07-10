@@ -40,7 +40,13 @@
       </div>
       <div class="btns-nav">
         <input id="input-product" type="text" placeholder="Digite o produto" />
-        <button class="btn-nav btn-hover">Buscar</button>
+        <button
+          id="btn-search"
+          class="btn-nav-filter btn-hover"
+          onclick="filterProducts()"
+        >
+          Buscar
+        </button>
       </div>
 
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -342,7 +348,7 @@
                 <div class="checkbox-options">
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="color"
                       id="lightBlue"
                       class="checkbox-round"
@@ -352,7 +358,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="color"
                       id="white"
                       class="checkbox-round"
@@ -361,7 +367,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="color"
                       id="black"
                       class="checkbox-round"
@@ -376,7 +382,7 @@
                 <div class="checkbox-options">
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="size"
                       id="sizePP"
                       class="checkbox-round"
@@ -386,7 +392,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="size"
                       id="sizeP"
                       class="checkbox-round"
@@ -395,7 +401,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="size"
                       id="sizeM"
                       class="checkbox-round"
@@ -404,7 +410,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="size"
                       id="sizeG"
                       class="checkbox-round"
@@ -413,7 +419,7 @@
                   </div>
                   <div class="checkbox">
                     <input
-                      type="checkbox"
+                      type="radio"
                       name="size"
                       id="sizeGG"
                       class="checkbox-round"
@@ -518,5 +524,7 @@
     ></script>
     <script src="javascript/mail-validation.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="javascript/modal-cards.js"></script>
+    <script src="javascript/filter.js"></script>
   </body>
 </html>
