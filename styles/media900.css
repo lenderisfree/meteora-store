@@ -29,7 +29,7 @@
     position: unset;
   }
 
-  .btn-nav {
+  .btn-nav-filter {
     background-color: var(--neutral-color);
     border: 1px solid black;
     color: var(--main-color);
