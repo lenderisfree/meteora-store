@@ -40,6 +40,14 @@
     width: 230px;
   }
 
+  .bag {
+    display: none;
+  }
+
+  .bag-mobile {
+    display: block;
+  }
+
   .cardgrid {
     width: 160px;
   }

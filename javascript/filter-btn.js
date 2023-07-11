@@ -5,6 +5,16 @@ document
   .getElementById("input-product")
   .addEventListener("input", filterProducts);
 
+// Adiciona o evento de clique às divs com a classe "card-title"
+let cardTitles = document.getElementsByClassName("card-title");
+for (let i = 0; i < cardTitles.length; i++) {
+  cardTitles[i].addEventListener("click", function () {
+    let titleText = this.textContent.toLowerCase();
+    document.getElementById("input-product").value = titleText;
+    filterProducts();
+  });
+}
+
 function filterProducts() {
   // Obtém o valor digitado na caixa de entrada
   let searchValue = document

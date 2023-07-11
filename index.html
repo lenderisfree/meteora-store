@@ -29,6 +29,9 @@
           <a href="#">Novidades</a>
           <a href="#">Promoções</a>
         </nav>
+        <div class="bag bag-mobile">
+          <i class="bi bi-bag"></i>
+        </div>
         <i class="bi bi-list" id="menu"></i>
         <nav id="mobile-navbar">
           <i class="bi bi-x-lg" id="close-menu"></i>
@@ -38,14 +41,14 @@
           <a href="#">Promoções</a>
         </nav>
       </div>
+      <div class="cart"></div>
+
       <div class="btns-nav">
+        <div class="bag">
+          <i class="bi bi-bag"></i>
+        </div>
         <input id="input-product" type="text" placeholder="Digite o produto" />
-        <button
-          class="btn-nav-filter btn-hover btn-search"
-          onclick="filterProducts()"
-        >
-          Buscar
-        </button>
+        <button class="btn-nav-filter btn-hover btn-search">Buscar</button>
       </div>
 
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -524,6 +527,6 @@
     <script src="javascript/mail-validation.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/modal-cards.js"></script>
-    <script src="javascript/filter.js"></script>
+    <script src="javascript/filter-btn.js"></script>
   </body>
 </html>

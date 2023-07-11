@@ -48,6 +48,14 @@ header {
   right: 0;
 }
 
+.bi-bag {
+  font-size: 1.8rem !important;
+}
+
+.bag-mobile {
+  display: none;
+}
+
 #input-product {
   width: 175px;
   padding: 10px 15px;
