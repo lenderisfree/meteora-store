@@ -9,5 +9,3 @@ const menu = document.querySelector("#mobile-navbar");
     menu.classList.toggle("menu-active"); //o toggle quer dizer que, se a classe existir, ele remove, se ela não existir, ela coloca. Ou seja, ele alterna.
   });
 });
-
-// Modal cards

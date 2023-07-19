@@ -27,11 +27,13 @@
           <a href="#">Home</a>
           <a href="#">Nossas lojas</a>
           <a href="#">Novidades</a>
-          <a href="#">Promoções</a>
+          <a id="promo" href="#">Promoções</a>
         </nav>
+
         <div class="bag bag-mobile">
           <i class="bi bi-bag"></i>
         </div>
+
         <i class="bi bi-list" id="menu"></i>
         <nav id="mobile-navbar">
           <i class="bi bi-x-lg" id="close-menu"></i>
@@ -41,7 +43,27 @@
           <a href="#">Promoções</a>
         </nav>
       </div>
-      <div class="cart"></div>
+      <div class="cart">
+        <div class="header-cart">
+          <h3>Meu carrinho</h3>
+          <i id="close-cart" class="bi bi-x"></i>
+        </div>
+        <div class="products-cart">
+          <img src="#" alt="" />
+          <div class="products-cart-items">
+            <h1 class="modal-title"></h1>
+            <p class="modal-description"></p>
+            <p class="modal-price"></p>
+            <p class="store-delivery">Vendido e entregue por Riachuelo</p>
+            <span class="modal-border modal-border-light"></span>
+            <div class="total-cart">
+              <h3>Total:</h3>
+              <h3>R$00.00</h3>
+            </div>
+            <button class="chekout btn-hover">Processar compra</button>
+          </div>
+        </div>
+      </div>
 
       <div class="btns-nav">
         <div class="bag">
@@ -430,7 +452,7 @@
                   </div>
                 </div>
               </div>
-              <button id="add-cart">Adicionar à sacola</button>
+              <button id="add-cart">Adicionar ao carrinho</button>
             </div>
           </div>
         </div>
@@ -525,8 +547,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="javascript/mail-validation.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/mobile-navbar.js"></script>
     <script src="javascript/modal-cards.js"></script>
     <script src="javascript/filter-btn.js"></script>
+    <script src="javascript/cart.js"></script>
   </body>
 </html>

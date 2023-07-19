@@ -50,10 +50,7 @@ header {
 
 .bi-bag {
   font-size: 1.8rem !important;
-}
-
-.bag-mobile {
-  display: none;
+  cursor: pointer;
 }
 
 #input-product {

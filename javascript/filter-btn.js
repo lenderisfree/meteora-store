@@ -1,5 +1,7 @@
 document.querySelector(".btn-search").addEventListener("click", filterProducts);
 
+document.querySelector(".btn-search").addEventListener("click", filterProducts);
+
 // Adiciona o evento de entrada à caixa de entrada
 document
   .getElementById("input-product")

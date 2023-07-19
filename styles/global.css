@@ -18,3 +18,8 @@ select:focus {
   border: 1 none;
   outline: 0;
 }
+
+.btn-hover:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
